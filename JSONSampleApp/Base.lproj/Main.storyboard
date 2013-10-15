@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="25" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Web View" id="2Bc-xq-6yJ">
+                                    <navigationItem title="Web " id="2Bc-xq-6yJ">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="a0A-9S-Vlf">
                                             <connections>
                                                 <action selector="back:" destination="zvo-Tb-wYT" id="r3f-BP-3sL"/>

@@ -34,7 +34,7 @@
     
     dispatch_async(bkgQueue, ^{
         NSData *data= [NSData dataWithContentsOfURL:fuzzURL];
-        [self performSelectorOnMainThread:@selector(fetchedData:) withObject:data waitUntilDone:YES];
+        [self performSelectorInBackground:@selector(fetchedData:) withObject:data];
     });
 }
 -(void)fetchedData:(NSData *)responseData{
@@ -48,16 +48,14 @@
             [self.imageEntries addObject:item];
         }
     }
-    NSLog(@"%@", self.imageEntries);
-    [self.tableView reloadData];
-    self.title=[NSString stringWithFormat:@"Images:%d items", [self.imageEntries count]];
+    
     
     //operate tasks to update the UI in the main queue.
-    /* dispatch_async(dispatch_get_main_queue(), ^{
-     [self.tableView reloadData];
-     self.title=[NSString stringWithFormat:@"%d items", [self.entries count]];
-     //NSLog(@"%@", self.entries);
-     });*/
+     dispatch_async(dispatch_get_main_queue(), ^{
+         NSLog(@"%@", self.imageEntries);
+         [self.tableView reloadData];
+         self.title=[NSString stringWithFormat:@"Images:%d items", [self.imageEntries count]];
+     });
 }
 
 - (void)didReceiveMemoryWarning
