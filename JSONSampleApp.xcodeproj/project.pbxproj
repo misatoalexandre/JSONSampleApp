@@ -133,8 +133,6 @@
 				53688B81180D9DA900F2A813 /* AppDelegate.h */,
 				53688B82180D9DA900F2A813 /* AppDelegate.m */,
 				53688B84180D9DA900F2A813 /* Main.storyboard */,
-				53688B87180D9DA900F2A813 /* FirstViewController.h */,
-				53688B88180D9DA900F2A813 /* FirstViewController.m */,
 				53688BB8180DA31500F2A813 /* AllContentsTVC.h */,
 				53688BB9180DA31500F2A813 /* AllContentsTVC.m */,
 				53688BBB180DA34800F2A813 /* TextTVC.h */,
@@ -143,6 +141,8 @@
 				53688BBF180DA38600F2A813 /* ImageTVC.m */,
 				53688B8A180D9DA900F2A813 /* SecondViewController.h */,
 				53688B8B180D9DA900F2A813 /* SecondViewController.m */,
+				53688B87180D9DA900F2A813 /* FirstViewController.h */,
+				53688B88180D9DA900F2A813 /* FirstViewController.m */,
 				53688B8D180D9DA900F2A813 /* Images.xcassets */,
 				53688B79180D9DA900F2A813 /* Supporting Files */,
 			);
