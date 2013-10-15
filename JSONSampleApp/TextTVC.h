@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebVCViewController.h"
 
-@interface TextTVC : UITableViewController
+
+@interface TextTVC : UITableViewController <WebVCViewControllerDelegate>
+
+@property (nonatomic, strong) NSArray *results;
+@property (nonatomic, strong) NSMutableArray *textEntries;
 
 @end

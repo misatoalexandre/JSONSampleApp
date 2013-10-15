@@ -10,5 +10,6 @@
 
 @interface AllContentsTVC : UITableViewController
 
+@property (nonatomic, strong) NSArray *entries;
 
 @end

@@ -6,8 +6,14 @@
 //  Copyright (c) 2013 Misato Tina Alexandre. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 
-@interface ImageTVC : UITableViewController
+
+#import <UIKit/UIKit.h>
+#import "WebVCViewController.h"
+
+@interface ImageTVC : UITableViewController<WebVCViewControllerDelegate>
+
+@property (nonatomic, strong) NSArray *imageResults;
+@property (nonatomic, strong) NSMutableArray *imageEntries;
 
 @end
